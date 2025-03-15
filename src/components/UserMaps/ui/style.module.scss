@@ -1,0 +1,13 @@
+@use '../../../styles//globals.scss' as globals;
+
+.userCard {
+    border: 1px solid globals.$black;
+    border-radius: 8px;
+    padding: 4px;
+    font: globals.$h4-700-32-RFDewi;
+}
+
+.img{
+    border: 2px solid globals.$yellow-dark;
+    border-radius: 8px;
+}
