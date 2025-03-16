@@ -7,7 +7,7 @@ export interface Users  {
     email: string;
 }
 
-interface UserData {
+export interface UserData {
     data: Users[];
     loading: boolean;
     error: string | null;

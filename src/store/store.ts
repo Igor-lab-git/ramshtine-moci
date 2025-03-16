@@ -4,7 +4,7 @@ import { userReduser } from "./user/userReduser";
 
  const store = configureStore({
     reducer: {
-        user: userReduser
+        users: userReduser
     },
 })
 
