@@ -1,0 +1,1 @@
+export const getProduct = (state: any) => state.product;

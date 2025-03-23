@@ -1,13 +1,22 @@
-@use '../../../styles//globals.scss' as globals;
+@use "../../../styles//globals.scss" as globals;
 
-.userCard {
-    border: 1px solid globals.$black;
-    border-radius: 8px;
-    padding: 4px;
-    font: globals.$h4-700-32-RFDewi;
+.wrapperCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
-.img{
-    border: 2px solid globals.$yellow-dark;
-    border-radius: 8px;
+.productCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid globals.$black;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.img {
+  border: 2px solid globals.$yellow-dark;
+  border-radius: 8px;
 }

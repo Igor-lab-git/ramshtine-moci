@@ -1,81 +1,53 @@
-// export interface IUsers {
-//     id: number;
-//     userName: string;
-//     email: string;
-//     password: string;
-//     fullName: string;
-//     avatarUrl: string;
-//     role: string;
-//     createdAt: Date;
-//     lastLogin: Date;
-//     preferences: IPreferences;
-//     vide: string;
-// }
 
-// interface IPreferences {
-//     theme: string;
-//     notifications: boolean;
-//     language: string;
-// }
+export interface IProduct {
+    id: number;
+    productName: string;
+    imgUrl: string;
+    descripteon: string;
+    price: string;
+}
 
-// enum User {
-//     ADMIN = 'admin',
-//     USER = 'user',
-// }
-
-// export const users = [
+// export const products: IProduct[] = [
 //     {
 //         id: 1,
-//         userName: 'john_doe',
-//         email: 'john.doe@example.com',
-//         password: 'hashed_password_123',
-//         fullName: 'John Doe',
-//         avatarUrl:'https://i.pinimg.com/736x/ab/7e/6b/ab7e6b99ea9fe10aa48a7a6e78f96305.jpg',
-//         role: 'user',
-//         isActive: true,
-//         createdAt: new Date('2022-01-01T10:00:00Z'),
-//         lastLogin: new Date('2023-01-10T14:30:00Z'),
-//         preferences: {
-//             theme: 'dark',
-//             notifications: true,
-//             language: 'en'
-//         },
-//         vide: '<iframe width="720" height="405" src="https://rutube.ru/play/embed/b8cfc3642401e2f3b891124047295d2f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>',
+//         productName: 'Apple iPhone 13',
+//         imgUrl:'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+//         descripteon: 'Смартфон Apple iPhone 13 128 ГБ синий, ядер - 6x(3.23 ГГц), 4 ГБ, 1 SIM',
+//         price: '63 799 ₽',
 //     },
 //     {
 //         id: 2,
-//         userName: 'john_doe',
-//         email: 'john.doe@example.com',
-//         password: 'hashed_password_123',
-//         fullName: 'John Doe',
-//         avatarUrl:'https://i.pinimg.com/736x/ab/7e/6b/ab7e6b99ea9fe10aa48a7a6e78f96305.jpg',
-//         role: 'user',
-//         isActive: true,
-//         createdAt: new Date('2022-01-01T10:00:00Z'),
-//         lastLogin: new Date('2023-01-10T14:30:00Z'),
-//         preferences: {
-//             theme: 'dark',
-//             notifications: true,
-//             language: 'en'
-//         },
-//         vide: '<iframe width="720" height="405" src="https://rutube.ru/play/embed/b8cfc3642401e2f3b891124047295d2f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>',
+//         productName: 'Apple iPhone 13',
+//         imgUrl:'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+//         descripteon: 'Смартфон Apple iPhone 13 128 ГБ синий, ядер - 6x(3.23 ГГц), 4 ГБ, 1 SIM',
+//         price: '63 799 ₽',
 //     },
 //     {
 //         id: 3,
-//         userName: 'john_doe',
-//         email: 'john.doe@example.com',
-//         password: 'hashed_password_123',
-//         fullName: 'John Doe',
-//         avatarUrl:'https://i.pinimg.com/736x/ab/7e/6b/ab7e6b99ea9fe10aa48a7a6e78f96305.jpg',
-//         role: 'user',
-//         isActive: true,
-//         createdAt: new Date('2022-01-01T10:00:00Z'),
-//         lastLogin: new Date('2023-01-10T14:30:00Z'),
-//         preferences: {
-//             theme: 'dark',
-//             notifications: true,
-//             language: 'en'
-//         },
-//         vide: '<iframe width="720" height="405" src="https://rutube.ru/play/embed/b8cfc3642401e2f3b891124047295d2f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>',
+//         productName: 'Apple iPhone 13',
+//         imgUrl:'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+//         descripteon: 'Смартфон Apple iPhone 13 128 ГБ синий, ядер - 6x(3.23 ГГц), 4 ГБ, 1 SIM',
+//         price: '63 799 ₽',
+//     },
+//     {
+//         id: 4,
+//         productName: 'Apple iPhone 13',
+//         imgUrl:'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+//         descripteon: 'Смартфон Apple iPhone 13 128 ГБ синий, ядер - 6x(3.23 ГГц), 4 ГБ, 1 SIM',
+//         price: '63 799 ₽',
+//     },
+//     {
+//         id: 5,
+//         productName: 'Apple iPhone 13',
+//         imgUrl:'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+//         descripteon: 'Смартфон Apple iPhone 13 128 ГБ синий, ядер - 6x(3.23 ГГц), 4 ГБ, 1 SIM',
+//         price: '63 799 ₽',
+//     },
+//     {
+//         id: 6,
+//         productName: 'Apple iPhone 13',
+//         imgUrl:'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+//         descripteon: 'Смартфон Apple iPhone 13 128 ГБ синий, ядер - 6x(3.23 ГГц), 4 ГБ, 1 SIM',
+//         price: '63 799 ₽',
 //     }
 // ]

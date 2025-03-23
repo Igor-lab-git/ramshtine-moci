@@ -1,0 +1,10 @@
+@use '../../../styles/globals.scss' as globals;
+
+.wrapperHeader {
+    height: 70px;
+    background: globals.$grey-medium;
+}
+.list {
+    display: flex;
+    gap: 40px;
+}
